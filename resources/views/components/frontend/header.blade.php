@@ -23,6 +23,9 @@
                             <li class="{{ request()->routeIs('about-us') ? 'active' : '' }}">
                                 <a href="{{ route('about-us') }}">About</a>
                             </li>
+                            <li>
+                                <a href="{{ route('our-projects') }}">Productions</a>
+                            </li>
                             <li class="dropdown {{ request()->routeIs('our-team') || request()->routeIs('our-services') || request()->routeIs('our-gallery') ? 'active' : '' }}">
                                 <a href="#">Pages</a>
                                     <ul class="sub-menu">  
@@ -31,7 +34,10 @@
                                         </li>  
                                         <li>
                                             <a href="{{ route('audition') }}">Video Auditions</a>
-                                        </li>                                      
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('script.submission') }}">Script Submission</a>
+                                        </li>
                                         <li class="{{ request()->routeIs('our-team') ? 'active' : '' }}">
                                             <a href="{{ route('our-team') }}">Our Team</a>
                                         </li>
@@ -39,10 +45,7 @@
                                             <a href="{{ route('our-services') }}">Our Services</a>
                                         </li>                                                                               
                                     </ul>
-                            </li>
-                            <li>
-                                <a href="{{ route('our-projects') }}">Productions</a>
-                            </li>
+                            </li>                            
                             <li>
                                 <a href="{{ route('contact-us') }}">Contact Us</a>
                             </li>

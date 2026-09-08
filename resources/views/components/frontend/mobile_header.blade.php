@@ -7,6 +7,9 @@
 					<li>
 						<a href="{{ route('about-us') }}">About</a>
 					</li>
+					<li>
+						<a href="{{ route('our-projects') }}">Productions</a>
+					</li>
 					<li class="dropdown">
 						<a href="#">Pages</a>
 						<i class="sub-menu-toggle fa fa-angle-down"></i>
@@ -16,7 +19,9 @@
 							</li> 
 							<li>
 								<a href="{{ route('audition') }}">Video Auditions</a>
-							</li>  							
+							</li>
+							<li>
+								<a href="{{ route('script.submission') }}">Script Submission</a>  							
 							<li>
 								<a href="{{ route('our-team') }}">Our Team</a>
 							</li>
@@ -24,10 +29,7 @@
 								<a href="{{ route('our-services') }}">Our Services</a>
 							</li>							
 						</ul>
-					</li>
-					<li>
-						<a href="{{ route('our-projects') }}">Productions</a>
-					</li>					
+					</li>										
 					<li>
 						<a href="{{ route('contact-us') }}">Contact Us</a>
 					</li>

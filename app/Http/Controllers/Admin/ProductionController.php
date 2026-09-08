@@ -38,6 +38,8 @@ class ProductionController extends Controller
     {
         $validated = $request->validate([
             'title' => ['required', 'string', 'max:255'],
+            'director' => ['nullable', 'string', 'max:255'],
+            'writer' => ['nullable', 'string', 'max:255'],
             'short_description' => ['nullable', 'string'],
             'description' => ['nullable', 'string'],
             'youtube_url' => ['nullable', 'url', 'max:2048'],
@@ -92,6 +94,8 @@ class ProductionController extends Controller
 
         $validated = $request->validate([
             'title' => ['required', 'string', 'max:255'],
+            'director' => ['nullable', 'string', 'max:255'],
+            'writer' => ['nullable', 'string', 'max:255'],
             'short_description' => ['nullable', 'string'],
             'description' => ['nullable', 'string'],
             'youtube_url' => ['nullable', 'url', 'max:2048'],

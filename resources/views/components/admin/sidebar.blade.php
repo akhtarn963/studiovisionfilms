@@ -128,6 +128,21 @@
               </li>
             </ul>
           </li>
+          <li class="menu-item {{ request()->routeIs('admin.auditions.*') ? 'active' : '' }}">
+              <a
+                href="{{ route('admin.auditions.index') }}"
+                class="menu-link"
+              >
+                <i class="menu-icon tf-icons bx bx-camera"></i>
+                <div data-i18n="Support">Auditions</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="{{ route('admin.script-submissions.index') }}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-file"></i>
+                  <div>Script Submissions</div>
+              </a>
+          </li>
           <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Pages</span>
             </li>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuditionController;
+use App\Http\Controllers\WriterSubmissionController;
 
 /* admin controller */
 use App\Http\Controllers\Admin\ProductionController;
@@ -12,6 +13,8 @@ use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\ContentController;
+use App\Http\Controllers\Admin\AuditionController as AdminAuditionController;
+use App\Http\Controllers\Admin\WriterSubmissionController as AdminWriterSubmissionController;
 
 Route::get('/', function () {
     return view('home');
@@ -44,6 +47,9 @@ Route::post('/contact/store',[ContactController::class, 'store'])->name('contact
 Route::get('/audition', [AuditionController::class, 'index'])->name('audition');
 Route::post('/audition', [AuditionController::class, 'store'])->name('audition.store');
 
+Route::get('/script-submission', [WriterSubmissionController::class, 'index'])->name('script.submission');
+Route::post('/script-submission', [WriterSubmissionController::class, 'store'])->name('script.store');
+
 
 /* admin routes */
 Route::prefix('admin')
@@ -61,4 +67,12 @@ Route::prefix('admin')
         Route::resource('settings', SettingController::class);
         Route::resource('contact-us', ContactUsController::class);
         Route::resource('contents', ContentController::class);
+        Route::get('auditions', [AdminAuditionController::class, 'index'])->name('auditions.index');
+        Route::get('auditions/{id}/video', [AdminAuditionController::class, 'video'])->name('auditions.video');
+        Route::get('auditions/{id}/download-video', [AdminAuditionController::class, 'downloadVideo'])->name('auditions.downloadVideo');
+        Route::get('auditions/{id}/show', [AdminAuditionController::class, 'show'])->name('auditions.show');
+        Route::get('script-submissions', [AdminWriterSubmissionController::class, 'index'])->name('script-submissions.index');
+        Route::get('script-submissions/{id}/view-script', [AdminWriterSubmissionController::class, 'viewScript'])->name('script-submissions.viewScript');
+        Route::get('script-submissions/{id}/download-script', [AdminWriterSubmissionController::class, 'downloadScript'])->name('script-submissions.downloadScript');
+        Route::get('script-submissions/{id}/show', [AdminWriterSubmissionController::class, 'show'])->name('script-submissions.show');
     });

@@ -1578,7 +1578,7 @@ img.tp-slider-alternative-image	{
 	background-color:rgba(255, 255, 255, 0.5);
 }
 
-.tp-static-layer.tp-icon {
+.tp-static-layer.tp-icon, .tp-static-layer.tp-icon a {
 	min-width: 37px; 
 	max-width: 37px;
 	white-space: nowrap; 
@@ -1597,7 +1597,7 @@ img.tp-slider-alternative-image	{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-.tp-static-layer.tp-icon:hover {
+.tp-static-layer.tp-icon:hover,.tp-static-layer.tp-icon a:hover {
 	color: #da0e2b;
 }
 

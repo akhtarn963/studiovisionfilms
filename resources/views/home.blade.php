@@ -132,7 +132,7 @@
                                     data-responsive="off" data-startslide="0" data-endslide="2"
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><i class="fa fa-facebook"></i>
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><a href="@setting('facebook_url')" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
                             </div>
                             <div class="tp-caption primary-color-hover tp-static-layer tp-icon"
                                     data-x="['left','left','left','left']" data-hoffset="['0','0','0','-20']"
@@ -142,7 +142,7 @@
                                     data-endslide="2"
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><i class="fa fa-twitter"></i>
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><a href="@setting('twitter_url')" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
                             </div>
                             <div class="tp-caption primary-color-hover tp-static-layer tp-icon"
                                     data-x="['left','left','left','left']" data-hoffset="['0','0','0','-20']"
@@ -151,7 +151,7 @@
                                     data-responsive_offset="on" data-responsive="off" data-startslide="0" data-endslide="2"
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><i class="fa fa-instagram"></i>
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"><a href="@setting('instagram_url')" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
                             </div>
                             <div class="tp-caption primary-color-hover tp-static-layer tp-icon"
                                     data-x="['left','left','left','left']" data-hoffset="['0','0','0','-20']"
@@ -162,7 +162,7 @@
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]"><i class="fa fa-pinterest"></i>
+                                    data-paddingleft="[0,0,0,0]"><a href="@setting('youtube_url')" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +204,7 @@
                             We are a creative film and photo production company hungry for quality in aesthetics. To create modern recognizable stuff we are working with a strong network of experienced professionals. We set up teams to shape your identity, push your idea and manage the workflow from pre- to post-production.
                         </p>
                         <div class="mt-4"></div>
-                        <a href="#" target="_self" class="button">Hire us now</a>
+                        <a href="javascript:void(0)" target="_self" class="button">Hire us now</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                         <h2 class="section-title fz-56 mb-4">A selection of some recent awards</h2>
                         <div class="film-button">
                             <i class="ion-android-arrow-forward"></i>
-                            <a href="#" target="_self">Learn more</a>
+                            <a href="javascript:void(0)" target="_self">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -258,10 +258,10 @@
                                 </div>
                                 <div class="info">
                                     <div class="category">
-                                        <a href="#">Serial Film</a>
+                                        <a href="javascript:void(0)">Serial Film</a>
                                     </div>
                                     <div class="title">This Last Laugh</div>
-                                    <div class="more"><a href="film-detail.html">View more</a></div>
+                                    <div class="more"><a href="javascript:void(0)">View more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -272,11 +272,11 @@
                                 </div>
                                 <div class="info">
                                     <div class="category">
-                                        <a href="#">Anthology Film</a>, 
-                                        <a href="#">Serial Film</a>
+                                        <a href="javascript:void(0)">Anthology Film</a>, 
+                                        <a href="javascript:void(0)">Serial Film</a>
                                     </div>
                                     <div class="title">This Last Laugh</div>
-                                    <div class="more"><a href="film-detail.html">View more</a></div>
+                                    <div class="more"><a href="javascript:void(0)">View more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -287,10 +287,10 @@
                                 </div>
                                 <div class="info">
                                     <div class="category">
-                                        <a href="#">Feature-Length Film</a>
+                                        <a href="javascript:void(0)">Feature-Length Film</a>
                                     </div>
                                     <div class="title">Alaska is a Drag</div>
-                                    <div class="more"><a href="film-detail.html">View more</a></div>
+                                    <div class="more"><a href="javascript:void(0)">View more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -305,10 +305,10 @@
                                 </div>
                                 <div class="info">
                                     <div class="category">
-                                        <a href="#">Short Film</a>
+                                        <a href="javascript:void(0)">Short Film</a>
                                     </div>
                                     <div class="title">Raising Bertie Up</div>
-                                    <div class="more"><a href="film-detail.html">View more</a></div>
+                                    <div class="more"><a href="javascript:void(0)">View more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -319,10 +319,10 @@
                                 </div>
                                 <div class="info">
                                     <div class="category">
-                                        <a href="#">Short Film</a>
+                                        <a href="javascript:void(0)">Short Film</a>
                                     </div>
                                     <div class="title">Kicks</div>
-                                    <div class="more"><a href="film-detail.html">View more</a></div>
+                                    <div class="more"><a href="javascript:void(0)">View more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -333,11 +333,11 @@
                                 </div>
                                 <div class="info">
                                     <div class="category">
-                                        <a href="#">Anthology Film</a>, 
-                                        <a href="#">Serial Film</a>
+                                        <a href="javascript:void(0)">Anthology Film</a>, 
+                                        <a href="javascript:void(0)">Serial Film</a>
                                     </div>
                                     <div class="title">The Secret Scripture</div>
-                                    <div class="more"><a href="film-detail.html">View more</a></div>
+                                    <div class="more"><a href="javascript:void(0)">View more</a></div>
                                 </div>
                             </div>
                         </div>
@@ -354,8 +354,8 @@
                 </div>
                 <div class="col-md-5 col-sm-12">
                     <div class="pt-2 text-center-sm">
-                        <a href="#" target="_self" class="button-2 mb-1">Learn more</a>&nbsp;&nbsp;
-                        <a href="#" target="_self" class="button">Hire us now</a>
+                        <a href="javascript:void(0)" target="_self" class="button-2 mb-1">Learn more</a>&nbsp;&nbsp;
+                        <a href="javascript:void(0)" target="_self" class="button">Hire us now</a>
                     </div>
                 </div>
             </div>
@@ -384,7 +384,7 @@
                                 We can film your project whether it is a commercial advertise, a short film or a document film. We have expertise in these fields.
                             </div>
                             <div class="icon-boxes-link">
-                                <a href="#"><span class="ion-android-arrow-forward"></span></a>
+                                <a href="javascript:void(0)"><span class="ion-android-arrow-forward"></span></a>
                             </div>
                         </div>
                     </div>
@@ -400,7 +400,7 @@
                                 Some workshops have invited us to come lecturing. We also offer private tuitions for absolute beginners or mid-level producers who need more advice.
                             </div>
                             <div class="icon-boxes-link">
-                                <a href="#"><span class="ion-android-arrow-forward"></span></a>
+                                <a href="javascript:void(0)"><span class="ion-android-arrow-forward"></span></a>
                             </div>
                         </div>
                     </div>
@@ -416,7 +416,7 @@
                                 Sometimes we don’t use our equipment so you can hire them for your filming. Check our schedule and contact if it suits your time.
                             </div>
                             <div class="icon-boxes-link">
-                                <a href="#"><span class="ion-android-arrow-forward"></span></a>
+                                <a href="javascript:void(0)"><span class="ion-android-arrow-forward"></span></a>
                             </div>
                         </div>
                     </div>
@@ -564,7 +564,7 @@
                     <div class="blog-item style-1">
                         <div class="blog-item-inner">
                             <div class="blog-thumbnail">
-                                <a href="blog-detail.html">
+                                <a href="javascript:void(0)">
                                     <img src="{{ asset('assets/images/blog/blog_1.jpg') }}" alt="" /> 
                                 </a>
                             </div>
@@ -572,13 +572,13 @@
                                 <span class="blog-info-date">
                                     <span class="posted-on">January 25, 2017</span>
                                 </span>
-                                <a href="blog-detail.html" class="blog-info-title">
+                                <a href="javascript:void(0)" class="blog-info-title">
                                     The Story of Ferguson through the Eyes of the People Who Lived it 
                                 </a>
                                 <div class="blog-info-meta">
                                     <div class="meta">
                                         <span class="view">132 Views</span>
-                                        <span class="like"><a href="#" class="like-btn">2 Likes</a></span>
+                                        <span class="like"><a href="javascript:void(0)" class="like-btn">2 Likes</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -589,7 +589,7 @@
                     <div class="blog-item style-1">
                         <div class="blog-item-inner">
                             <div class="blog-thumbnail">
-                                <a href="blog-detail.html">
+                                <a href="javascript:void(0)">
                                     <img src="{{ asset('assets/images/blog/blog_2.jpg') }}" alt="" /> 
                                 </a>
                             </div>
@@ -597,13 +597,13 @@
                                 <span class="blog-info-date">
                                     <span class="posted-on">January 25, 2017</span>
                                 </span>
-                                <a href="blog-detail.html" class="blog-info-title">
+                                <a href="javascript:void(0)" class="blog-info-title">
                                     “Communication Is Where a Film Lives and Dies”: Director Zoe Lister-Jones 
                                 </a>
                                 <div class="blog-info-meta">
                                     <div class="meta">
                                         <span class="view">114 Views</span>
-                                        <span class="like"><a href="#" class="like-btn">0 Like</a></span>
+                                        <span class="like"><a href="javascript:void(0)" class="like-btn">0 Like</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -614,7 +614,7 @@
                     <div class="blog-item style-1">
                         <div class="blog-item-inner">
                             <div class="blog-thumbnail">
-                                <a href="blog-detail.html">
+                                <a href="javascript:void(0)">
                                     <img src="{{ asset('assets/images/blog/blog_3.jpg') }}" alt="" /> 
                                 </a>
                             </div>
@@ -622,13 +622,13 @@
                                 <span class="blog-info-date">
                                     <span class="posted-on">January 25, 2017</span>
                                 </span>
-                                <a href="blog-detail.html" class="blog-info-title">
+                                <a href="javascript:void(0)" class="blog-info-title">
                                     Profound Communication Only Happens When There Is Persistence
                                 </a>
                                 <div class="blog-info-meta">
                                     <div class="meta">
                                         <span class="view">91 Views</span>
-                                        <span class="like"><a href="#" class="like-btn">1 Like</a></span>
+                                        <span class="like"><a href="javascript:void(0)" class="like-btn">1 Like</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -639,7 +639,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center mt-4">
-                        <a href="#" class="button-2">Go To Blog</a>
+                        <a href="javascript:void(0)" class="button-2">Go To Blog</a>
                     </div>
                 </div>
             </div>
@@ -654,7 +654,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="footer-newsletter-right">
-                        <form method="post">
+                        <form method="POST" action="javascript:void(0)">
+                            @csrf
                             <div class="form-fields">
                                 <div class="form">
                                     <input type="email" name="email" placeholder="Enter your e-mail" /> 

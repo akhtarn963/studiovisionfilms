@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}"/>
-		<title>Studio Vision Films | @yield('title')</title>
+		<title>@yield('title') | Studio Vision Films</title>
 
 		<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" type="text/css" media="all"/>
 		<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}" type="text/css" media="all" />
@@ -52,8 +52,8 @@
 							<div class="col-md-6 p-0">
 								<div class="copyright-right">
 									<ul>
-										<li><a href="#">Privacy Policy</a></li>
-										<li><a href="#">Term And Conditions</a></li>
+										<li><a href="javascript:void(0)">Privacy Policy</a></li>
+										<li><a href="javascript:void(0)">Term And Conditions</a></li>
 									</ul>
 								</div>
 							</div>
@@ -63,14 +63,14 @@
 			</div>
 		</div>
 
-		<!-- <div class="modals">
+		<div class="modals">
 			<div class="md-modal md-effect-1" id="modal-1">
 				<div class="md-content bg-transparent">
 					<iframe src="https://player.vimeo.com/video/177252412" width="500" height="281" allowfullscreen></iframe>
 					<button class="md-close">Close me!</button>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="md-overlay"></div><!-- the overlay element -->
 

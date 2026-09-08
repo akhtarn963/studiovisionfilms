@@ -160,7 +160,45 @@
                         </div>
                     </div>
                     <!-- /Pricing Card -->
-                     <!-- Genre and Medium Card -->
+                     <!-- Director Card -->
+                    <div class="card mb-6">
+                        <div class="card-body">
+                            <!-- director -->
+                            <div class="mb-6">                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="col ecommerce-select2-dropdown">
+                                        <label class="form-label mb-1" for="director">
+                                            <span>Directed By</span>
+                                        </label>
+                                        <input type="text" class="form-control @error('director') is-invalid @enderror"
+                                            id="director" placeholder="Director's Name" name="director"
+                                            aria-label="Director's Name" value="{{ old('director', $production->director) }}" />
+                                        @error('director')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- writer -->
+                            <div class="mb-6">                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="col ecommerce-select2-dropdown">
+                                        <label class="form-label mb-1" for="writer">
+                                            <span>Written By</span>
+                                        </label>
+                                        <input type="text" class="form-control @error('writer') is-invalid @enderror"
+                                            id="writer" placeholder="Writer's Name" name="writer"
+                                            aria-label="Writer's Name" value="{{ old('writer', $production->writer) }}" />
+                                        @error('writer')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- end director card -->
+                    <!-- Genre and Medium Card -->
                     <div class="card mb-6">
                         <div class="card-body">
                             <!-- Genre -->
@@ -211,9 +249,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- end genre and medium card -->
-                </div>
+                        </div>                        
+                    </div>
+                    <!-- end genre and medium card -->
                 <!-- /Second column -->
             </div>
         </form>

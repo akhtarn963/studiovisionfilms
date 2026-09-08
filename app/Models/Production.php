@@ -10,6 +10,8 @@ class Production extends Model
 {
     protected $fillable = [
         'title',
+        'director',
+        'writer',
         'slug',
         'poster',
         'short_description',

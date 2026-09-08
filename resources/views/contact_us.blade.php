@@ -102,38 +102,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="googleMap" class="mb-6" data-icon="{{ asset('assets/images/icon_location.png') }}" data-lat="37.789133" data-lon="-122.402158"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section section-bg-3 section-cover footer-newsletter style-1 pt-11 pb-8">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-4">
-                    <div class="footer-newsletter-left">Subscribe to our Newsletter</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-newsletter-right">
-                        <form method="post">
-                            <div class="form-fields">
-                                <div class="form">
-                                    <input type="email" name="email" placeholder="Enter your e-mail" /> 
-                                    <input type="submit" value="Submit" />
-                                </div>
-                                <p class="note">Note* : Spectators are our passion. Creation is our core.</p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </div>
 
 @endsection

@@ -61,6 +61,22 @@
                     <div class="film-detail-info">
                         <div class="info-item">
                             <div class="info-item-inner">
+                                <div class="title">Directed By</div>
+                                <div class="content">
+                                    {{ $project->director ?? 'N/A' }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item-inner">
+                                <div class="title">Written By</div>
+                                <div class="content">
+                                    {{ $project->writer ?? 'N/A' }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item-inner">
                                 <div class="title">Cast</div>
                                 <div class="content">
                                     <ul class="list-unstyled">
@@ -71,15 +87,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="info-item">
-                            <div class="info-item-inner">
-                                <div class="title">Awards</div>
-                                <div class="content">
-                                    Best Cinematography Best Photography
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-item">
+                         
+                        <!--<div class="info-item">
                             <div class="info-item-inner">
                                 <div class="title">Client</div>
                                 <div class="content">Ana Alcazar</div>

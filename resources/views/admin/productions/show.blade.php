@@ -66,6 +66,16 @@
                     @else
                         <div class="alert alert-warning">No images uploaded for this product.</div>
                     @endif
+
+                    <div class="mt-3">
+                        <h5>Directed By:</h5>
+                        <p>{{ $production->director ?? 'N/A' }}</p>
+                    </div>
+
+                    <div class="mt-3">
+                        <h5>Written By:</h5>
+                        <p>{{ $production->writer ?? 'N/A' }}</p>
+                    </div>                    
                     
                     <div class="mt-3">
                         <h5>Cast:</h5>
