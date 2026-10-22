@@ -20,6 +20,9 @@ class Production extends Model
         'is_published',
         'genre',
         'medium',
+        'release_date',
+        'status',
+        'cast',
     ];
 
     protected $casts = [
@@ -46,11 +49,7 @@ class Production extends Model
         return $slug;
     }
 
-    public function cast(): HasMany
-    {
-        return $this->hasMany(ProductionCast::class)->orderBy('sort_order');
-    }
-
+    
     public function gallery(): HasMany
     {
         return $this->hasMany(Gallery::class)->orderBy('sort_order');

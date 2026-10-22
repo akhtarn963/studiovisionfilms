@@ -64,6 +64,14 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
                             </div>
+
+                            <div class="row mb-6">
+                                <div class="col"><label class="form-label" for="cast">Cast</label> 
+                                <textarea
+                                         class="form-control @error('cast') is-invalid @enderror" id="cast" placeholder="Cast"
+                                        name="cast" aria-label="Cast">{{ old('cast') }}</textarea>
+                                </div>                                
+                            </div>
                             
                             <div class="row mb-6">
                                 <div class="col"><label class="form-label" for="short_description">Short Description</label> 
@@ -244,7 +252,50 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <!-- end genre and medium card -->
+                         <!-- status and date Card -->
+                    <div class="card mb-6">
+                        <div class="card-body">
+                            <!-- status -->
+                            <div class="mb-6">                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="col ecommerce-select2-dropdown">
+                                        <label class="form-label mb-1" for="category-org">
+                                            <span>Status</span>
+                                        </label>
+                                        <select id="category-org"
+                                            class="select2 form-select @error('status') is-invalid @enderror"
+                                            data-placeholder="Select Status" name="status">
+                                            <option value="">Select Status</option>
+                                            @foreach($statuses as $status)
+                                                <option value="{{ $status }}" {{ old('status') == $status ? 'selected' : '' }}>{{ $status }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('status')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- date -->
+                            <div class="mb-6">                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="col ecommerce-select2-dropdown">
+                                        <label class="form-label mb-1" for="medium">
+                                            <span>Release Date</span>
+                                        </label>
+                                        <input type="date" id="release_date" class="form-control @error('release_date') is-invalid @enderror" name="release_date" value="{{ old('release_date') }}">
+                                        @error('release_date')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                            </div>                            
+                            
+                        </div>
+                    </div>
+                        <!-- end status and date card -->
                 </div>
                 <!-- /Second column -->
             </div>

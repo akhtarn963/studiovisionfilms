@@ -22,4 +22,10 @@ return [
         'Feature Film',
     ],
 
+    'statuses' => [
+        'Upcoming',
+        'On Air',
+        'Completed',
+    ],
+
 ];

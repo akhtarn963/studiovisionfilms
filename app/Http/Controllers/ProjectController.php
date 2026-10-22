@@ -11,7 +11,7 @@ class ProjectController extends Controller
 {
     public function getAllProjects(){
 
-    $projects = Production::with('cast')->latest()->paginate(10);
+    $projects = Production::orderBy('release_date', 'desc')->latest()->paginate(12);
 
         return view('projects', compact('projects'));
 
@@ -35,7 +35,7 @@ class ProjectController extends Controller
 
     public function getAllGalleryImages(){
         $genres = Config('productions.genres');
-        $galleryImages = Gallery::with('production')->latest()->paginate(10);
+        $galleryImages = Gallery::with('production')->latest()->paginate(15);
 
         return view('gallery', compact('galleryImages', 'genres'));
     }

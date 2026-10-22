@@ -79,15 +79,7 @@
                     
                     <div class="mt-3">
                         <h5>Cast:</h5>
-                        @if($production->cast->count() > 0)
-                            <ul class="list-unstyled">
-                                @foreach($production->cast as $cast)
-                                    <li><strong>{{ $cast->name }}</strong> as {{ $cast->character_name }}</li>
-                                @endforeach
-                            </ul>
-                        @else
-                            <p class="text-muted">No cast members added.</p>
-                        @endif
+                        {{$production->cast}}
                     </div>
                     
                 </div>
@@ -99,6 +91,7 @@
 
                     <p class="mb-2"><strong>Medium:</strong> {{ $production->medium ?? 'N/A' }}</p>
                     <p class="mb-2"><strong>Genre:</strong> {{ $production->genre ?? 'N/A' }}</p>
+                    <p class="mb-2"><strong>Release Date:</strong> {{ $production->release_date ?? 'N/A' }}</p>
                     
                     <h5>Short Description</h5>
                     <div class="border p-3 rounded bg-light">

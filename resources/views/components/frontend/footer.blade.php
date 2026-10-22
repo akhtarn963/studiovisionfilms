@@ -6,10 +6,10 @@
 								<img class="footer-logo-image" src="{{ asset('assets/images/logo.png') }}" alt="Studio Vision Films" style="width: 45%;" />
 							</a>
 							<div class="footer-social">
-								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" target="_blank" rel="noopener noreferrer" href="@setting('facebook_url')"><i class="fa fa-facebook"></i></a>
-								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" target="_blank" rel="noopener noreferrer" href="@setting('twitter_url')"><i class="fa fa-twitter"></i></a>
-								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="YouTube" target="_blank" rel="noopener noreferrer" href="@setting('youtube_url')"><i class="fa fa-youtube"></i></a>
-								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram" target="_blank" rel="noopener noreferrer" href="@setting('instagram_url')"><i class="fa fa-instagram"></i></a>
+								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook" target="_blank" rel="noopener noreferrer" href="@setting('facebook_url')"><i class="fa-brands fa-facebook-f"></i></a>
+								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter" target="_blank" rel="noopener noreferrer" href="@setting('tiktok_url')"><i class="fa-brands fa-tiktok"></i></a>
+								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="YouTube" target="_blank" rel="noopener noreferrer" href="@setting('youtube_url')"><i class="fa-brands fa-youtube"></i></a>
+								<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram" target="_blank" rel="noopener noreferrer" href="@setting('instagram_url')"><i class="fa-brands fa-instagram"></i></a>
 							</div>
 						</div>
 						<div class="col-md-2">

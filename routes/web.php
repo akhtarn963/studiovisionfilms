@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuditionController;
@@ -15,10 +16,9 @@ use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\ContentController;
 use App\Http\Controllers\Admin\AuditionController as AdminAuditionController;
 use App\Http\Controllers\Admin\WriterSubmissionController as AdminWriterSubmissionController;
+use App\Http\Controllers\Admin\BannerController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [FrontendController::class, 'home'])->name('home');
 
 Route::get('/about-us', function () {
     return view('about');
@@ -75,4 +75,5 @@ Route::prefix('admin')
         Route::get('script-submissions/{id}/view-script', [AdminWriterSubmissionController::class, 'viewScript'])->name('script-submissions.viewScript');
         Route::get('script-submissions/{id}/download-script', [AdminWriterSubmissionController::class, 'downloadScript'])->name('script-submissions.downloadScript');
         Route::get('script-submissions/{id}/show', [AdminWriterSubmissionController::class, 'show'])->name('script-submissions.show');
+        Route::resource('banners', BannerController::class);
     });

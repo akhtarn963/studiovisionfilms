@@ -365,7 +365,7 @@ function slideSlick() {
 		slidesToShow: 3,
 		dots: false,
 		arrows: false,
-		autoplay: false,
+		autoplay: true,
 		responsive: [{
 			breakpoint: 768,
 			settings: {

@@ -1,4 +1,4 @@
-<header id="header" class="header header-desktop {{ request()->routeIs('home') ? 'header-overlay' : '' }} header-1">
+<header id="header" class="header header-desktop {{ (request()->routeIs('home') || request()->routeIs('project-detail')) ? 'header-overlay' : '' }} header-1">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 p-0">
@@ -7,9 +7,9 @@
                         @if(request()->routeIs('home'))
                             <img class="logo" src="{{ asset('assets/images/logo.png') }}" alt="Logo" title="Studio Vision Films" />
                         @else
-                            <img class="logo" src="{{ asset('assets/images/logo_alt.png') }}" alt="Logo" title="Studio Vision Films" />
+                            <img class="logo" src="{{ asset('assets/images/logo.png') }}" alt="Logo" title="Studio Vision Films" />
                         @endif
-                        <img class="logo-alt" src="{{ asset('assets/images/logo_alt.png') }}" alt="Logo" title="Studio Vision Films" />
+                        <img class="logo-alt" src="{{ asset('assets/images/logo.png') }}" alt="Logo" title="Studio Vision Films" />
                     </a>
                 </div>
             </div>
@@ -23,30 +23,43 @@
                             <li class="{{ request()->routeIs('about-us') ? 'active' : '' }}">
                                 <a href="{{ route('about-us') }}">About</a>
                             </li>
-                            <li>
-                                <a href="{{ route('our-projects') }}">Productions</a>
+                            <li class="{{ request()->routeIs('our-projects') ? 'active' : '' }}">
+                                <a href="{{ route('our-projects') }}">Projects</a>
                             </li>
-                            <li class="dropdown {{ request()->routeIs('our-team') || request()->routeIs('our-services') || request()->routeIs('our-gallery') ? 'active' : '' }}">
+                            <li class="{{ request()->routeIs('audition') ? 'active' : '' }}">
+                                <a href="{{ route('audition') }}">Audition</a>
+                            </li>
+                            <li class="{{ request()->routeIs('script.submission') ? 'active' : '' }}">
+                                <a href="{{ route('script.submission') }}">Script Submission</a>
+                            </li>
+                            <!-- <li class="{{ request()->routeIs('our-team') ? 'active' : '' }}">
+                                <a href="{{ route('our-team') }}">Our Team</a>
+                            </li> -->
+                            <li class="{{ request()->routeIs('bts-gallery') ? 'active' : '' }}">
+                                <a href="{{ route('bts-gallery') }}">Gallery</a>
+                            </li>
+                            
+                            <!-- <li class="dropdown {{ request()->routeIs('our-team') || request()->routeIs('our-services') || request()->routeIs('bts-gallery') || request()->routeIs('audition') || request()->routeIs('script.submission') ? 'active' : '' }}">
                                 <a href="#">Pages</a>
                                     <ul class="sub-menu">  
-                                        <li>
+                                        <li class="{{ request()->routeIs('bts-gallery') ? 'active' : '' }}">
                                             <a href="{{ route('bts-gallery') }}">BTS Gallery</a>
                                         </li>  
-                                        <li>
+                                        <li class="{{ request()->routeIs('audition') ? 'active' : '' }}">
                                             <a href="{{ route('audition') }}">Video Auditions</a>
                                         </li>
-                                        <li>
+                                        <li class="{{ request()->routeIs('script.submission') ? 'active' : '' }}">
                                             <a href="{{ route('script.submission') }}">Script Submission</a>
                                         </li>
                                         <li class="{{ request()->routeIs('our-team') ? 'active' : '' }}">
                                             <a href="{{ route('our-team') }}">Our Team</a>
                                         </li>
-                                        <li>
+                                        <li class="{{ request()->routeIs('our-services') ? 'active' : '' }}">
                                             <a href="{{ route('our-services') }}">Our Services</a>
                                         </li>                                                                               
                                     </ul>
-                            </li>                            
-                            <li>
+                            </li>  -->                           
+                            <li class="{{ request()->routeIs('contact-us') ? 'active' : '' }}">
                                 <a href="{{ route('contact-us') }}">Contact Us</a>
                             </li>
                         </ul>

@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" type="text/css" media="all"/>
 		<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" type="text/css" media="all"/>
 		<link href="//fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i%7CMontserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -100,5 +101,6 @@
 		<script type="text/javascript" src="{{ asset('assets/js/extensions/revolution.extension.navigation.min.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('assets/js/extensions/revolution.extension.migration.min.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('assets/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+	@stack('scripts')
 	</body>
 </html>

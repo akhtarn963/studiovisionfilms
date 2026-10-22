@@ -21,66 +21,75 @@
             </div>
         </div>
     </div>
-    <div class="section pt-16 pb-10">
+    <div class="section pt-10 pb-10">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="text-center-xs">
-                        <img src="images/film_8.jpg" alt="" class="mb-3" />
-                        <h2 class="section-title fz-40">We Are The Best</h2>
-                        <p>We are a creative film and photo production company hungry for quality in aesthetics. To create modern recognizable stuff we are working with a strong network of experienced professionals. We set up teams to shape your identity, push your idea and manage the workflow from pre- to post-production.</p>
-                        <div class="mt-4"></div>
-                        <a href="#" target="_self" class="button-2">Hire us now</a>
-                        <div class="mb-9"></div>
-                    </div>
+                <!-- Left Column -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h3 class="section-title primary-color">Company Profile</h3>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="mt-3"></div>
-                    <div class="film-single-testimonial small">
-                        <div class="item">
-                            <div class="photo">
-                                <img src="{{ asset('assets/images/quote_bg_2.png') }}" alt="" />
-                            </div>
-                            <div class="text">
-                                If you or your organization have a story to tell, an idea to share or word to spread, the Nine Studio can help you bring it to life.
-                            </div>
-                            <div class="info">
-                                <div class="author">
-                                    <span class="name">Jerry Hansen</span> 
-                                    <span class="tagline">Actor</span>
-                                </div>
-                            </div>
-                            <div class="mt-5"></div>
-                            <img src="images/film_9.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="mb-9"></div>
+                <!-- Right Column -->
+                <div class="col-md-9">
+                    <p>
+                        Studio Vision Films is a creative production house dedicated to developing 
+                        compelling stories for television, film and digital platforms. We bring together 
+                        strong storytelling, distinctive visual language and professional production 
+                        expertise to create content that connects with audiences and leaves a lasting 
+                        impression.
+                    </p>
+                    <p>
+                        From concept development and scripting to production and post-production, 
+                        our focus remains on delivering meaningful, engaging and visually powerful 
+                        entertainment. We believe every story deserves its own identity — and our 
+                        purpose is to transform that vision into memorable screen experiences.
+                    </p>
+                    
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-3 col-sm-12">
+                     <h2 class="section-title primary-color">Founders</h2>
+                    <!--<p class="mb-3">Since 2008, we shot more than 50 short formats (commercials, music videos, documentaries and short movies). We set up teams to shape your identity, push your idea and manage the workflow from pre- to post-production.</p>
+                    <div class="icon-boxes icon-boxes-small">
+                        <div class="icon-boxes-icon">
+                            <i class="ion-trophy"></i>
+                        </div>
+                        <h5 class="icon-boxes-title"> 06 Awards in 2014/2015.</h5>
+                        <div class="icon-boxes-content">
+                            These awards are both national and international<br /> in 2014/2015
+                        </div>
+                    </div>
+                    <div class="mb-4"></div>
+                    <div class="icon-boxes icon-boxes-small">
+                        <div class="icon-boxes-icon">
+                            <i class="ion-trophy"></i>
+                        </div>
+                        <h5 class="icon-boxes-title"> 04 Awards in 2016</h5>
+                        <div class="icon-boxes-content">
+                            These awards are both national and international<br /> in 2016
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-md-5 col-sm-12">
                     <div class="film-list-member">
                         <div class="item">
                             <div class="photo">
-                                <img src="{{ asset('assets/images/team/team_6.jpg') }}" alt="" />
+                                <img src="{{ asset('assets/images/photos/founders.jpg') }}" alt="" />
                             </div>
                             <div class="info">
-                                <span class="name">John Anderson</span>
-                                <span class="tagline">/ Director</span>
+                                <span class="name">Jasim Abbas</span>
+                                <span class="tagline">/ Founder</span>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="photo">
-                                <img src="{{ asset('assets/images/team/team_7.jpg') }}" alt="" />
-                            </div>
+                        <div class="item" style="margin-top: 20px;">
                             <div class="info">
-                                <span class="name">Fabian Hellgardt</span>
-                                <span class="tagline nd-font">/ Creative Director</span>
+                                <span class="name">Ali Shahroz</span>
+                                <span class="tagline nd-font">/ Co-Founder</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12">
+                <!-- <div class="col-md-5 col-sm-12">
                     <h2 class="section-title fz-40 mb-3">Creative Directors</h2>
                     <p class="mb-3">Since 2008, we shot more than 50 short formats (commercials, music videos, documentaries and short movies). We set up teams to shape your identity, push your idea and manage the workflow from pre- to post-production.</p>
                     <div class="icon-boxes icon-boxes-small">
@@ -102,74 +111,111 @@
                             These awards are both national and international<br /> in 2016
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section bg-light pt-14 pb-8">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="text-center">
-                        <h3 class="sub-title primary-color"> Filmming Services</h3>
-                        <h2 class="section-title mb-2">Explore Services</h2>
-                        <p class="mb-4">Doloremque, ad. Vero veniam dicta aliquid blanditiis ullam quibusdam, accusamus, <br />eius quia molestias nihil temporibus nam praesentium odit repellat.</p>
-                    </div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="icon-boxes icon-boxes-bg text-center">
-                        <div class="icon-boxes-icon" data-bg-image="{{ asset('assets/images/icon-boxes/icon_bg_1.png') }}">
-                            <i class="ns-tripod"></i>
-                        </div>
-                        <div class="icon-boxes-inner">
-                            <h5 class="icon-boxes-title">FILMING SERVICES</h5>
-                            <div class="icon-boxes-content">
-                                We can film your project whether it is a commercial advertise, a short film or a document film. We have expertise in these fields.
-                            </div>
-                            <div class="icon-boxes-link">
-                                <a href="#"><span class="ion-android-arrow-forward"></span></a>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Left Column -->
+                <div class="col-md-3 mb-4 mb-md-0">                    
+                    <h3 class="section-title primary-color">Our Identity</h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="icon-boxes icon-boxes-bg text-center">
-                        <div class="icon-boxes-icon" data-bg-image="{{ asset('assets/images/icon-boxes/icon_bg_2.png') }}">
-                            <i class="ns-seats"></i>
+                <!-- Right Column -->
+                <div class="col-md-9">
+                    <h3 class="section-title">The name “Studio Vision Films” represents…</h3>
+                    <p>
+                        The name Studio Vision Films reflects the philosophy at the heart of our company: 
+                        every remarkable production begins with a clear creative vision. 
+                        “Studio” represents collaboration, craftsmanship and the space where ideas take shape, 
+                        while “Vision” represents imagination, direction and the ability to see beyond the ordinary.
+                    </p>
+                    <p>
+                        Together, the name embodies our ambition to turn original ideas into powerful 
+                        visual stories — stories that entertain, inspire and resonate with audiences across 
+                        generations and platforms.
+                    </p>
+                    <!-- Vision / Mission -->
+                    <div class="row mt-5">
+                        <!-- Vision -->
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <h3 class="section-title">Vision</h3>
+                            <div class="border-bottom border-primary my-3"
+                                style="width: 40px;">
+                            </div>
+                            <p>
+                                To become a leading creative force in Pakistan’s entertainment 
+                                industry by producing distinctive, high-quality and culturally 
+                                relevant content that connects local storytelling with contemporary 
+                                audiences and global standards.
+                            </p>
+                            <p>
+                                We aspire to create stories that are remembered not only for their performances, 
+                                but for their emotions, visual identity and impact.
+                            </p>
+                            
                         </div>
-                        <div class="icon-boxes-inner">
-                            <h5 class="icon-boxes-title">WORKSHOPS &amp; PRIVATE TUITION</h5>
-                            <div class="icon-boxes-content">
-                                Some workshops have invited us to come lecturing. We also offer private tuitions for absolute beginners or mid-level producers who need more advice.
+                        <!-- Mission -->
+                        <div class="col-md-6">
+                            <h3 class="section-title">Mission</h3>
+                            <div class="border-bottom border-primary my-3"
+                                style="width: 40px;">
                             </div>
-                            <div class="icon-boxes-link">
-                                <a href="#"><span class="ion-android-arrow-forward"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon-boxes icon-boxes-bg text-center">
-                        <div class="icon-boxes-icon" data-bg-image="{{ asset('assets/images/icon-boxes/icon_bg_3.png') }}">
-                            <i class="ns-video-camera"></i>
-                        </div>
-                        <div class="icon-boxes-inner">
-                            <h5 class="icon-boxes-title">Equipment hire</h5>
-                            <div class="icon-boxes-content">
-                                Sometimes we don’t use our equipment so you can hire them for your filming. Check our schedule and contact if it suits your time.
-                            </div>
-                            <div class="icon-boxes-link">
-                                <a href="#"><span class="ion-android-arrow-forward"></span></a>
-                            </div>
+                            <p>
+                                Our mission is to develop and produce compelling television dramas, 
+                                films and digital content through strong storytelling, creative 
+                                collaboration and efficient production practices.
+                            </p>
+                            <p>
+                                Studio Vision Films is committed to nurturing creative talent, 
+                                building long-term partnerships with broadcasters and platforms, 
+                                and consistently delivering productions that balance creativity, 
+                                commercial appeal and audience engagement.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-3 mb-4 mb-md-0">                    
+                    <h3 class="primary-color">Our Corporate Philosophy</h3>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-9">                    
+                        <!-- Vision -->
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <h3 class="section-title">Philosophy</h3>
+                            <div class="border-bottom border-primary my-3"
+                                style="width: 40px;">
+                            </div>
+                            <p>
+                                At Studio Vision Films, we believe powerful stories begin with a clear vision. 
+                                Our philosophy is rooted in creating meaningful, visually compelling and 
+                                emotionally engaging content that connects with audiences. From the first idea 
+                                to the final frame, we combine creativity, strong storytelling and thoughtful 
+                                execution to produce work that leaves a lasting impression.
+                            </p>                            
+                        </div>
+                        <!-- Mission -->
+                        <div class="col-md-6">
+                            <h3 class="section-title">Commitment</h3>
+                            <div class="border-bottom border-primary my-3"
+                                style="width: 40px;">
+                            </div>
+                            <p>
+                                We are committed to delivering quality at every stage of production. 
+                                Whether developing television dramas, films, branded content or digital 
+                                productions, our team approaches every project with passion, professionalism 
+                                and attention to detail. We believe in building long-term relationships through 
+                                transparency, collaboration and a constant commitment to raising the creative 
+                                standard of every story we tell.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
         </div>
     </div>
-    @include('components.frontend.brand_logo')
+    
 </div>
 
 @endsection

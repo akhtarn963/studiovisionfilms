@@ -50,10 +50,10 @@
                             </div>
                         </div>
                         <ul class="film-social">
-                            <li><a href="@setting('facebook_url')" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="@setting('twitter_url')" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="@setting('instagram_url')" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="@setting('youtube_url')" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="@setting('facebook_url')" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="@setting('tiktok_url')" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="@setting('instagram_url')" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="@setting('youtube_url')" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -121,7 +121,10 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input type="submit" value="SEND US NOW" class="button" />
+                                <button type="submit" id="submitBtn" class="button">
+                                    <i id="submitIcon" class="fa fa-paper-plane"></i>
+                                    <span id="submitText">SEND US NOW</span>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -133,3 +136,16 @@
 </div>
 
 @endsection
+@push('scripts')
+<script>
+    document.querySelector('.contact-form').addEventListener('submit', function () {
+        const button = document.getElementById('submitBtn');
+        const text = document.getElementById('submitText');
+        const icon = document.getElementById('submitIcon');
+
+        button.disabled = true;
+        text.textContent = 'SUBMITTING...';
+        icon.className = 'fa fa-spinner fa-spin';
+    });
+</script>
+@endpush

@@ -73,6 +73,12 @@
               <i class="menu-icon tf-icons bx bx-package"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
+            </li> 
+            <li class="menu-item {{ request()->routeIs('admin.banners.*') ? 'active' : '' }}">
+              <a href="{{ route('admin.banners.index') }}" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-image"></i>
+                <div data-i18n="Analytics">Banners</div>
+              </a>
             </li>            
             <li class="menu-item {{ request()->routeIs('admin.productions.*') ? 'open active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -92,7 +98,7 @@
                 </li>              
               </ul>
           </li>
-          <li class="menu-item {{ request()->routeIs('admin.production-casts.*') ? 'open active' : '' }}">
+          <!-- <li class="menu-item {{ request()->routeIs('admin.production-casts.*') ? 'open active' : '' }}">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-group"></i>
                 <div data-i18n="Production Casts">Production Casts</div>
@@ -109,7 +115,7 @@
                   </a>
                 </li>              
               </ul>
-          </li>
+          </li> -->
           <li class="menu-item {{ request()->routeIs('admin.galleries.*') ? 'open active' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-image"></i>

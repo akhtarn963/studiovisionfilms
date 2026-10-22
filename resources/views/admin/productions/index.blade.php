@@ -27,11 +27,11 @@
         <thead class="border-top">
           <tr>
             <th width="10%">ID</th>
-            <th width="10%">Title</th>
-            <th width="10%">Medium</th>
+            <th width="20%">Title</th>
+            <th width="15%">Medium</th>
             <th width="10%">Genre</th>
             <th width="20%" class="text-center">Poster</th>
-            <th width="20%">Youtube URL</th>
+            <th width="10%">Status</th>
             <th width="10%">actions</th>
           </tr>
         </thead>
@@ -51,7 +51,17 @@
             <td class="text-center">
               <img src="{{ asset('storage/'.$product->poster) }}" alt="Product-{{ $product->id }}" class="rounded" style="width: 200px; height: auto;">
             </td>
-            <td><a href="{{ $product->youtube_url }}" class="btn btn-sm btn-primary" target="_blank">Click to View</a></td>       
+            <td>
+              @if($product->status == 'Upcoming')
+                <span class="badge bg-label-warning me-1">{{ $product->status }}</span>
+              @elseif($product->status == 'On Air')
+                <span class="badge bg-label-success me-1">{{ $product->status }}</span>
+              @elseif($product->status == 'Completed')
+                <span class="badge bg-label-primary me-1">{{ $product->status }}</span>
+              @else
+                <span class="badge bg-label-dark me-1">N/A</span>
+              @endif
+            </td>
             <td>
               <div class="d-inline-block text-nowrap">
                 <a href="{{ route('admin.productions.edit', $product->id) }}" class="btn btn-icon"><i class="icon-base bx bx-edit icon-md"></i></a>

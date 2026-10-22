@@ -14,11 +14,12 @@ class ProductionController extends Controller
      */
     public function index()
     {
-        $productions = Production::latest()->paginate(10);
+        $productions = Production::orderBy('release_date', 'desc')->latest()->paginate(10);
         $mediums = Config('productions.mediums');
         $genres = Config('productions.genres');
+        $statuses = Config('productions.statuses');
 
-        return view('admin.productions.index', compact('productions', 'mediums', 'genres'));
+        return view('admin.productions.index', compact('productions', 'mediums', 'genres', 'statuses'));
     }
 
     /**
@@ -28,7 +29,8 @@ class ProductionController extends Controller
     {
         $mediums = Config('productions.mediums');
         $genres = Config('productions.genres');
-        return view('admin.productions.create', compact('mediums', 'genres'));
+        $statuses = Config('productions.statuses');
+        return view('admin.productions.create', compact('mediums', 'genres', 'statuses'));
     }
 
     /**
@@ -47,6 +49,9 @@ class ProductionController extends Controller
             'is_published' => ['nullable', 'boolean'],
             'genre' => ['nullable', 'string'],
             'medium' => ['nullable', 'string'],
+            'release_date' => ['nullable', 'date'],
+            'status' => ['nullable', 'string'],
+            'cast' => ['nullable', 'string'],
         ]);
 
         $validated['slug'] = Production::generateUniqueSlug($validated['title']);
@@ -81,8 +86,9 @@ class ProductionController extends Controller
         $production = Production::findOrFail($id);
         $mediums = Config('productions.mediums');
         $genres = Config('productions.genres');
+        $statuses = Config('productions.statuses');
 
-        return view('admin.productions.edit', compact('production', 'mediums', 'genres'));
+        return view('admin.productions.edit', compact('production', 'mediums', 'genres', 'statuses'));
     }
 
     /**
@@ -103,6 +109,9 @@ class ProductionController extends Controller
             'is_published' => ['nullable', 'boolean'],
             'genre' => ['nullable', 'string'],
             'medium' => ['nullable', 'string'],
+            'release_date' => ['nullable', 'date'],
+            'status' => ['nullable', 'string'],
+            'cast' => ['nullable', 'string'],
             'remove_poster' => ['nullable', 'boolean'],
         ]);
 

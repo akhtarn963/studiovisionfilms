@@ -1,27 +1,34 @@
 @extends('layouts.frontend')
-@section('title', 'Project Detail')
+
 @section('content')
 
 <div id="main">
-    <div class="section page-title">
-        <div class="container">
+    <div class="section">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="text-center-sm">
-                        <h1 class="title">Our <span>Projects</span></h1>
-                        <div class="breadcrumbs">
-                            <ul>
-                                <li><a href="{{ route('home') }}">Home</a></li>
-                                <li><a href="{{ route('our-projects') }}">Project</a></li>
-                                <li>{{$project->title}}</li>
-                            </ul>
-                        </div>
+                <div class="col-sm-12 p-0">
+                    <div id="rev_slider" class="rev_slider fullscreenbanner">
+                        <ul>
+                            <li data-thumb="{{ asset('storage/'.$project->poster) }}" data-title="{{ $project->title }}">
+                                <img src="{{ asset('storage/'.$project->poster) }}" alt="" data-bgposition="center center" />
+                            </li>
+                        </ul>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section pt-7 pb-7">
+    <!-- <div class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{{ asset('storage/'.$project->poster) }}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="section pt-7 pb-7">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -33,19 +40,35 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="section pb-7">
         <div class="container">
             <div class="row">
-                <div class="col-sm-9">
+                <div class="col-sm-9 pt-3">
                     <div class="film-detail-title">
-                        <h3 class="section-title"> {{$project->title}}</h3>
-                        <div class="category">
-                            <a href="#">{{$project->medium}}</a>
-                            <a href="#">{{$project->genre}}</a>
-                        </div>
-                        
-                    </div>
+    <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+
+        <div>
+            <h3 class="section-title">{{ $project->title }}</h3>
+
+            <div class="category">
+                <a href="#">{{ $project->medium }}</a>
+                <a href="#">{{ $project->genre }}</a>
+            </div>
+        </div>
+
+        @if($project->youtube_url)
+            <a href="{{ $project->youtube_url }}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-danger"
+               style="margin-left:auto; white-space:nowrap;">
+                <i class="bx bxl-youtube"></i> Watch on YouTube
+            </a>
+        @endif
+
+    </div>
+</div>
                     <div class="film-detail-content">
                         <blockquote>
                             {!! $project->short_description !!}
@@ -80,8 +103,8 @@
                                 <div class="title">Cast</div>
                                 <div class="content">
                                     <ul class="list-unstyled">
-                                        @foreach($project->cast as $cast)
-                                            <li><strong>{{ $cast->name }}</strong> as {{ $cast->character_name }}</li>
+                                        @foreach(explode(',', $project->cast) as $cast)
+                                            <li>{{ trim($cast) }}</li>
                                         @endforeach
                                     </ul>
                                 </div>
